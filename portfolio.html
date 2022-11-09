@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="sstyle.css">
+
+    	<header class="header">
+		<h1 class="logo"><a href="mainpage.html">Home</a></h1>
+      <ul class="main-nav">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="professionalbackground.html">Professional Background</a></li>
+        <li><a href="portfolio.html">Porfolio</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+	</header> 
+    </head>
+    <body><style>
+
+        #box{
+			background:#333;
+			color:#fff;
+			width:500px;
+			height:100px;
+			padding:40px;
+			text-align:center;
+		}
+
+		#box2{
+			background:black;
+			width:300px;
+			height:100px;
+			position:relative;
+		}
+    </style>
+    <center>
+     
+     <div class="column-layout">
+       <div class="main-column">
+        <h2>Fun with jQuery!</h2>
+        
+        <div id="container">
+            <button id="btnFadeOut">Fade Out</button>
+            <button id="btnFadeIn">Fade In</button>
+            <button id="btnFadeTog">Fade Toggle</button>
+    
+            <hr>
+    
+            <button id="btnSlideUp">Slide Up</button>
+            <button id="btnSlideDown">SlideDown</button>
+            <button id="btnStop">Stop</button>
+            <hr>
+    
+            <div id="box">Hello Everyone!</div>
+    
+            <hr>
+    
+            <button id="moveLeft">Move Left</button>
+            <button id="moveRight">Move Right</button>
+            <button id="moveAround">Move Around</button>
+            <div id="box2"></div>
+        </div>
+    
+        <script>
+            $(document).ready(function(){
+                $('#btnFadeOut').click(function(){
+                    $('#box').fadeOut(3000, function(){
+                        $('#btnFadeOut').text('Its Gone');
+                    });
+                });
+                $('#btnFadeIn').click(function(){
+                    $('#box').fadeIn(3000);
+                });
+                $('#btnFadeTog').click(function(){
+                    $('#box').fadeToggle(1000);
+                });
+                $('#btnSlideDown').click(function(){
+                    $('#box').slideDown(3000);
+                });
+                $('#btnSlideUp').click(function(){
+                    $('#box').slideUp(3000);
+                });
+                $('#btnSlideTog').click(function(){
+                    $('#box').slideToggle(3000);
+                });
+                $('#btnStop').click(function(){
+                    $('#box').stop();
+                });
+    
+                $('#moveRight').click(function(){
+                    $('#box2').animate({
+                        left: 500,
+                        height: '300px',
+                        width:'300px',
+                        opacity: '0.5'
+                    });
+                });
+    
+                $('#moveLeft').click(function(){
+                    $('#box2').animate({
+                        left: 0,
+                        height: '100px',
+                        width: '100px',
+                        opacity:'1'
+                    });
+                });
+    
+                $('#moveAround').click(function(){
+                    var box = $('#box2');
+                    box.animate({
+                        left: 300
+                    });
+                    box.animate({
+                        top: 300
+                    });
+                    box.animate({
+                        left:0,
+                        top: 300
+                    });
+                    box.animate({
+                        left: 0,
+                        top:0
+                    });
+                });
+            });
+        </script>
+        </div>
+        
+        <div class="sidebar-one">
+         <h3>Node.js</h3>
+<a href="https://serving.photos.photobox.com/971049106824872d941cdb6ae5ef0cd033af329ea073d3ede77fffb343015893a36b5fb3.jpg" target="_blank">
+    Node.js Person Class</a>
+        </div>
+        
+        <div class="sidebar-two">
+         <h3>SQL Database Example</h3>
+          <a href="https://serving.photos.photobox.com/08509106a41e5f58ac72ce98d10646991dd3d906fcb811928e6f3f482fe6d3bcb2f4116a.jpg" target="_blank">
+            SQL Database Primary Keys</a>
+        </div>
+    </div>
+    
+    <div class="call-outs-container">
+    
+    <div class="call-out">
+     <h4>Javascript</h4>
+      <p>Coming soon.</p>
+    </div>
+    
+    <div class="call-out">
+     <h4>C#</h4>
+      <p>Coming soon.</p>
+    </div>
+    
+    <div class="call-out">
+     <h4>Python</h4>
+      <p>Coming soon.</p>
+    </div>
+    </div></center>
+    
+    </body>
+    
+    </html>
