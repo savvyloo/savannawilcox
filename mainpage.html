@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <script type="text/javascript">
+            writeRandomQuote = function () {
+              var quotes = new Array();
+              quotes[0] = "Action is the real measure of intelligence.";
+              quotes[1] = "When you focus on the good, the good gets better.";
+              quotes[2] = "Sometimes you win, and sometimes you learn.";
+              quotes[3] = "A good head and a good heart are always a formidable combination.";
+              var rand = Math.floor(Math.random()*quotes.length);
+              document.write(quotes[rand]);
+            }
+          </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
@@ -43,4 +55,7 @@
                 <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
           </clipPath>
     </defs>	
-</svg>
+</svg></head>
+<body><center>
+      <script type="text/javascript">writeRandomQuote();</script>
+</body></center>
