@@ -79,7 +79,7 @@ a {
     right: 0;
     top: 0;
     bottom: 0;
-    cursor: crosshair;
+    cursor: pointer;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }

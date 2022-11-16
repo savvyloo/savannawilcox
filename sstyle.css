@@ -42,7 +42,7 @@ a {
 .main-nav a {
 	padding: 10px 15px;
 	text-transform: uppercase;
-	cursor: crosshair;
+	cursor: pointer;
 	text-align: center;
 	display: block;
 }
