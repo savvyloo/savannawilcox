@@ -60,12 +60,6 @@
     
             <hr>
     
-            <button id="moveLeft">Move Left</button>
-            <button id="moveRight">Move Right</button>
-            <button id="moveAround">Move Around</button>
-            <div id="box2"></div>
-        </div>
-    
         <script>
             $(document).ready(function(){
                 $('#btnFadeOut').click(function(){
@@ -91,43 +85,6 @@
                 $('#btnStop').click(function(){
                     $('#box').stop();
                 });
-    
-                $('#moveRight').click(function(){
-                    $('#box2').animate({
-                        left: 300,
-                        height: '200px',
-                        width:'200px',
-                        opacity: '0.5'
-                    });
-                });
-    
-                $('#moveLeft').click(function(){
-                    $('#box2').animate({
-                        left: 0,
-                        height: '50px',
-                        width: '50px',
-                        opacity:'1'
-                    });
-                });
-    
-                $('#moveAround').click(function(){
-                    var box = $('#box2');
-                    box.animate({
-                        left: 200
-                    });
-                    box.animate({
-                        top: 200
-                    });
-                    box.animate({
-                        left:0,
-                        top: 200
-                    });
-                    box.animate({
-                        left: 0,
-                        top:0
-                    });
-                });
-            });
         </script>
         </div>
         
